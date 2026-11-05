@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelos de convites — ConviteX</title>
+  <meta name="description" content="Galeria de modelos de convites digitais: aniversário, casamento, 15 anos, chá de bebê e formatura.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-i">
+      <a class="logo" href="index.html">Convite<span>X</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="precos.html">Preços</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-pequeno" href="modelos.html">Criar convite</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Galeria</span>
+          <h1 style="font-size:clamp(1.9rem,5vw,2.8rem)">Escolha o seu modelo</h1>
+          <p class="suave">Toque em um modelo para personalizar com os dados da sua festa.</p>
+        </div>
+        <div class="filtros" role="group" aria-label="Filtrar por categoria">
+          <button class="filtro" data-filtro="todas">Todas</button>
+          <button class="filtro" data-filtro="aniversario">Aniversário</button>
+          <button class="filtro" data-filtro="casamento">Casamento</button>
+          <button class="filtro" data-filtro="quinze">15 anos</button>
+          <button class="filtro" data-filtro="cha">Chá de bebê</button>
+          <button class="filtro" data-filtro="formatura">Formatura</button>
+        </div>
+        <div class="grade" id="grade"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="logo" href="index.html">Convite<span style="color:#c9a45c">X</span></a>
+          <p class="pequeno" style="margin-top:10px">Convites digitais personalizados, do jeito que você imaginou.</p>
+        </div>
+        <div>
+          <strong>Site</strong>
+          <ul>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato e suporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <ul><li><a data-email href="#">e-mail</a></li></ul>
+        </div>
+      </div>
+      <small>© <span data-ano></span> ConviteX. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/modelos.js"></script>
+  <script src="js/principal.js"></script>
+  <script src="js/galeria.js"></script>
+</body>
+</html>

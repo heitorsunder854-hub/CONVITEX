@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ConviteX — Convites digitais personalizados</title>
+  <meta name="description" content="Crie convites digitais elegantes para aniversário, casamento, 15 anos, chá de bebê e formatura. Personalize, veja em tempo real e baixe em PNG.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-i">
+      <a class="logo" href="index.html">Convite<span>X</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="precos.html">Preços</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-pequeno" href="modelos.html">Criar convite</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grade">
+        <div>
+          <span class="etiqueta">Convites digitais personalizados</span>
+          <h1>Um convite bonito, pronto em poucos minutos.</h1>
+          <p class="lead">Escolha um modelo elegante, preencha os dados da sua festa e veja o resultado na hora. Depois é só baixar em PNG e compartilhar com seus convidados.</p>
+          <div class="grupo-botoes">
+            <a class="btn" href="modelos.html">Ver modelos</a>
+            <a class="btn btn-claro" href="precos.html">Ver preços</a>
+          </div>
+        </div>
+        <div class="hero-visual" id="destaqueHero"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <span class="etiqueta">Como funciona</span>
+          <h2>Três passos simples</h2>
+        </div>
+        <div class="passos">
+          <div class="passo revelar"><div class="num">1</div><h3>Escolha o modelo</h3><p class="suave">Navegue pela galeria e escolha o estilo que combina com a sua celebração.</p></div>
+          <div class="passo revelar"><div class="num">2</div><h3>Personalize</h3><p class="suave">Digite nome, data, horário, endereço e mensagem. A prévia muda enquanto você escreve.</p></div>
+          <div class="passo revelar"><div class="num">3</div><h3>Baixe em PNG</h3><p class="suave">Salve a imagem e envie por WhatsApp, e-mail ou redes sociais.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faixa">
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <span class="etiqueta">Categorias</span>
+          <h2>Para cada momento especial</h2>
+        </div>
+        <div class="categorias revelar">
+          <a class="categoria" href="modelos.html?cat=aniversario">Aniversário<small>Festas de todas as idades</small></a>
+          <a class="categoria" href="modelos.html?cat=casamento">Casamento<small>Elegância para o grande dia</small></a>
+          <a class="categoria" href="modelos.html?cat=quinze">15 anos<small>Uma noite inesquecível</small></a>
+          <a class="categoria" href="modelos.html?cat=cha">Chá de bebê<small>Delicadeza e carinho</small></a>
+          <a class="categoria" href="modelos.html?cat=formatura">Formatura<small>Celebre a conquista</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao revelar">
+          <span class="etiqueta">Modelos em destaque</span>
+          <h2>Comece por um destes</h2>
+        </div>
+        <div class="grade revelar" id="destaques"></div>
+        <p class="centro" style="margin-top:28px"><a class="btn btn-claro" href="modelos.html">Ver todos os modelos</a></p>
+      </div>
+    </section>
+
+    <section class="faixa">
+      <div class="container centro revelar">
+        <h2>Preços simples, sem surpresa</h2>
+        <p class="suave">Modelos Essenciais a partir de <strong data-preco="essencial">R$ 10</strong> e Premium por <strong data-preco="premium">R$ 15</strong>.</p>
+        <a class="btn" href="precos.html">Conhecer os planos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="logo" href="index.html">Convite<span style="color:#c9a45c">X</span></a>
+          <p class="pequeno" style="margin-top:10px">Convites digitais personalizados, do jeito que você imaginou.</p>
+        </div>
+        <div>
+          <strong>Site</strong>
+          <ul>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato e suporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <ul><li><a data-email href="#">e-mail</a></li></ul>
+        </div>
+      </div>
+      <small>© <span data-ano></span> ConviteX. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/modelos.js"></script>
+  <script src="js/principal.js"></script>
+  <script src="js/galeria.js"></script>
+  <script>
+    // Convite grande do topo da página inicial
+    (function () {
+      var alvo = document.getElementById("destaqueHero");
+      var m = MODELOS.find(function (x) { return x.id === "cas-classico"; });
+      var a = document.createElement("a");
+      a.className = "card-modelo";
+      a.href = "editor.html?modelo=" + m.id;
+      a.setAttribute("aria-label", "Personalizar o modelo " + m.nome);
+      a.innerHTML = '<div class="miniatura"><canvas></canvas></div>';
+      alvo.appendChild(a);
+      var c = a.querySelector("canvas");
+      function d() { desenharConvite(c, m, dadosExemplo(m)); }
+      d();
+      aguardarFontes(d);
+    })();
+  </script>
+</body>
+</html>
