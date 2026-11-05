@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personalizar convite — ConviteX</title>
+  <meta name="description" content="Personalize seu convite digital com pré-visualização em tempo real e baixe em PNG.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-i">
+      <a class="logo" href="index.html">Convite<span>X</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="precos.html">Preços</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-pequeno" href="modelos.html">Criar convite</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Editor</span>
+          <h1 style="font-size:clamp(1.9rem,5vw,2.8rem)">Personalize seu convite</h1>
+          <p class="suave">Preencha os campos e veja o convite mudar na hora.</p>
+        </div>
+
+        <div class="editor-grade">
+          <form class="painel" id="formEditor" onsubmit="return false">
+            <label for="modelo">Modelo</label>
+            <select id="modelo"></select>
+
+            <label for="nome" id="rotuloNome">Nome</label>
+            <input id="nome" type="text" maxlength="40" autocomplete="off">
+
+            <div id="blocoIdade">
+              <label for="idade">Idade que completa</label>
+              <input id="idade" type="number" min="1" max="120" inputmode="numeric">
+            </div>
+
+            <div class="linha2">
+              <div>
+                <label for="data">Data</label>
+                <input id="data" type="date">
+              </div>
+              <div>
+                <label for="hora">Horário</label>
+                <input id="hora" type="time">
+              </div>
+            </div>
+
+            <label for="endereco">Endereço do evento</label>
+            <input id="endereco" type="text" maxlength="90" autocomplete="off">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" maxlength="160"></textarea>
+            <small class="suave">Até 160 caracteres para o texto caber bem no convite.</small>
+
+            <div class="grupo-botoes" style="margin-top:20px">
+              <button type="button" class="btn" id="baixar">Baixar PNG</button>
+              <button type="button" class="btn btn-claro" id="limpar">Limpar campos</button>
+              <a class="btn btn-claro" href="modelos.html">Trocar modelo</a>
+            </div>
+            <p class="status" id="status" role="status" aria-live="polite"></p>
+            <p class="nota" id="avisoPagamento">O pagamento ainda não está ativo. Nesta fase de testes, o PNG sai com a marca "ConviteX • demonstração" e nenhuma compra é realizada.</p>
+          </form>
+
+          <div class="previa-caixa">
+            <canvas id="previa" aria-label="Pré-visualização do convite"></canvas>
+            <small class="suave">Pré-visualização em tempo real</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="logo" href="index.html">Convite<span style="color:#c9a45c">X</span></a>
+          <p class="pequeno" style="margin-top:10px">Convites digitais personalizados, do jeito que você imaginou.</p>
+        </div>
+        <div>
+          <strong>Site</strong>
+          <ul>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato e suporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <ul><li><a data-email href="#">e-mail</a></li></ul>
+        </div>
+      </div>
+      <small>© <span data-ano></span> ConviteX. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/modelos.js"></script>
+  <script src="js/principal.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>

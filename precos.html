@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preços — ConviteX</title>
+  <meta name="description" content="Planos de convites digitais a partir de R$ 10. Escolha entre modelos Essenciais e Premium.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-i">
+      <a class="logo" href="index.html">Convite<span>X</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="precos.html">Preços</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-pequeno" href="modelos.html">Criar convite</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Preços</span>
+          <h1 style="font-size:clamp(1.9rem,5vw,2.8rem)">Escolha o seu plano</h1>
+          <p class="suave">Pagamento por convite, sem mensalidade.</p>
+        </div>
+
+        <div class="planos">
+          <div class="plano revelar">
+            <h3>Essencial</h3>
+            <div class="valor" data-preco="essencial">R$ 10</div>
+            <p class="suave pequeno">por convite</p>
+            <ul>
+              <li>Modelos Essenciais de todas as categorias</li>
+              <li>Personalização completa dos textos</li>
+              <li>Pré-visualização em tempo real</li>
+              <li>Download em PNG</li>
+            </ul>
+            <a class="btn btn-claro" href="modelos.html">Ver modelos Essenciais</a>
+          </div>
+          <div class="plano destaque revelar">
+            <h3>Premium</h3>
+            <div class="valor" data-preco="premium">R$ 15</div>
+            <p class="suave pequeno">por convite</p>
+            <ul>
+              <li>Modelos Premium com molduras elaboradas</li>
+              <li>Personalização completa dos textos</li>
+              <li>Pré-visualização em tempo real</li>
+              <li>Download em PNG</li>
+            </ul>
+            <a class="btn" href="modelos.html">Ver modelos Premium</a>
+          </div>
+        </div>
+
+        <p class="nota" style="max-width:820px;margin:28px auto 0">
+          <strong>Aviso:</strong> o pagamento online ainda não está ativo. Enquanto isso, você pode testar o editor e baixar um PNG de demonstração, com marca d'água. Nenhuma cobrança é feita.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="logo" href="index.html">Convite<span style="color:#c9a45c">X</span></a>
+          <p class="pequeno" style="margin-top:10px">Convites digitais personalizados, do jeito que você imaginou.</p>
+        </div>
+        <div>
+          <strong>Site</strong>
+          <ul>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato e suporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <ul><li><a data-email href="#">e-mail</a></li></ul>
+        </div>
+      </div>
+      <small>© <span data-ano></span> ConviteX. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>

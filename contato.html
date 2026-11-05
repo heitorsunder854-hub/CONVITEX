@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato e suporte — ConviteX</title>
+  <meta name="description" content="Fale com o ConviteX: dúvidas, suporte e sugestões.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <header class="topo">
+    <div class="container topo-i">
+      <a class="logo" href="index.html">Convite<span>X</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="modelos.html">Modelos</a>
+        <a href="precos.html">Preços</a>
+        <a href="contato.html">Contato</a>
+        <a class="btn btn-pequeno" href="modelos.html">Criar convite</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="cabecalho-secao">
+          <span class="etiqueta">Contato e suporte</span>
+          <h1 style="font-size:clamp(1.9rem,5vw,2.8rem)">Como podemos ajudar?</h1>
+          <p class="suave">Escreva para nós ou confira as perguntas frequentes.</p>
+        </div>
+
+        <div class="contato-grade">
+          <form class="painel" id="formContato" novalidate>
+            <label for="cNome">Seu nome</label>
+            <input id="cNome" name="nome" type="text" autocomplete="name" required>
+
+            <label for="cEmail">Seu e-mail</label>
+            <input id="cEmail" name="email" type="email" autocomplete="email" required>
+
+            <label for="cAssunto">Assunto</label>
+            <select id="cAssunto" name="assunto">
+              <option>Dúvida sobre o site</option>
+              <option>Suporte com meu convite</option>
+              <option>Sugestão de modelo</option>
+              <option>Outro assunto</option>
+            </select>
+
+            <label for="cMensagem">Mensagem</label>
+            <textarea id="cMensagem" name="mensagem" required></textarea>
+
+            <div style="margin-top:18px"><button class="btn" type="submit">Enviar mensagem</button></div>
+            <p class="status" id="statusContato" role="status" aria-live="polite"></p>
+            <p class="suave pequeno">Ao enviar, abrimos o seu app de e-mail com a mensagem pronta para <a data-email href="#">e-mail</a>.</p>
+          </form>
+
+          <div>
+            <h2 style="font-size:1.5rem">Perguntas frequentes</h2>
+            <details>
+              <summary>Como baixo meu convite?</summary>
+              <p>Abra o editor, preencha os campos e clique em "Baixar PNG". A imagem é salva no seu aparelho.</p>
+            </details>
+            <details>
+              <summary>Meus dados ficam guardados?</summary>
+              <p>Não. Tudo o que você digita fica apenas no seu navegador e não é enviado para nenhum servidor.</p>
+            </details>
+            <details>
+              <summary>Já posso pagar pelo site?</summary>
+              <p>Ainda não. O pagamento online será ativado no futuro. Por enquanto, o download é uma versão de demonstração com marca d'água.</p>
+            </details>
+            <details>
+              <summary>Posso pedir um modelo novo?</summary>
+              <p>Claro! Use o formulário ao lado com o assunto "Sugestão de modelo".</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape-grade">
+        <div>
+          <a class="logo" href="index.html">Convite<span style="color:#c9a45c">X</span></a>
+          <p class="pequeno" style="margin-top:10px">Convites digitais personalizados, do jeito que você imaginou.</p>
+        </div>
+        <div>
+          <strong>Site</strong>
+          <ul>
+            <li><a href="modelos.html">Modelos</a></li>
+            <li><a href="precos.html">Preços</a></li>
+            <li><a href="contato.html">Contato e suporte</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contato</strong>
+          <ul><li><a data-email href="#">e-mail</a></li></ul>
+        </div>
+      </div>
+      <small>© <span data-ano></span> ConviteX. Todos os direitos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/principal.js"></script>
+  <script src="js/contato.js"></script>
+</body>
+</html>
